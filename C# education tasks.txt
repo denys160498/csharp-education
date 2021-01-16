@@ -16,3 +16,4 @@ https://metanit.com/sharp/mvc5/
 
 C#:
 https://metanit.com/sharp/tutorial/
+https://metanit.com/sharp/tutorial/2.10.php
