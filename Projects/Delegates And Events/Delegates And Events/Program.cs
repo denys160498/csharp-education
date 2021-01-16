@@ -28,26 +28,7 @@ namespace Delegates_And_Events
 
         private static void DisplayMessage(object sender, AccountHandlerEventArgs e)
         {
-            string pretext = "";
-
-            if (sender is PersonalAccount)
-            {
-                pretext = "Personal Account:";
-            }
-            else if (sender is CorporativeAccount)
-            {
-                pretext = "Corporative Account:";
-            }
-            else if (sender is GovermentAccount)
-            {
-                pretext = "Goverment Account:";
-            }
-            else
-            {
-                pretext = "Account:\n";
-            }
-
-            Console.WriteLine($"{pretext}\nTransaction amount: {e.Sum}\nBalance after transaction: {(sender as Account).Balance}\nMessage:{e.Message}");
+            Console.WriteLine($"{(sender as Account).Type}\nTransaction amount: {e.Sum}\nBalance after transaction: {(sender as Account).Balance}\nMessage:{e.Message}");
         }
 
         private static void DisplayShortMessage(object sender, AccountHandlerEventArgs e)

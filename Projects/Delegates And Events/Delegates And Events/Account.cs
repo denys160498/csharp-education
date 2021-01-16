@@ -8,7 +8,9 @@ namespace Delegates_And_Events
     {
         public delegate void AccountHandler(object sender, AccountHandlerEventArgs e);
         public event AccountHandler Notify;
-
+        public virtual string Type
+        { get { return "Account"; } }
+        
         protected double balance;
         public double Balance
         { get { return balance; } }
