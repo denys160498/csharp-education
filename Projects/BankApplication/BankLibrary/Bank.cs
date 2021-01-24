@@ -58,15 +58,14 @@ namespace BankLibrary
 
                 tempAccounts[tempAccounts.Length - 1] = newAccount;
                 accounts = tempAccounts;
-
-                newAccount.Added += addSumHandler;
-                newAccount.Withdrawed += withdrawSumHandler;
-                newAccount.Closed += closeAccountHandler;
-                newAccount.Opened += openAccountHandler;
-                newAccount.Calculated += calculationHandler;
-
-                newAccount.Open();
             }
+            newAccount.Added += addSumHandler;
+            newAccount.Withdrawed += withdrawSumHandler;
+            newAccount.Closed += closeAccountHandler;
+            newAccount.Opened += openAccountHandler;
+            newAccount.Calculated += calculationHandler;
+
+            newAccount.Open();
         }
 
         public void Put(decimal sum, int id)
