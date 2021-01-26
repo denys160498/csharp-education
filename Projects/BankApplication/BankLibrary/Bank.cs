@@ -21,6 +21,11 @@ namespace BankLibrary
             Name = name;
         }
 
+        public IEnumerator<T> GetEnumerator()
+        {
+            return new BankEnumerator<T>(accounts);
+        }
+
         public void Open(AccountType accountType, decimal sum,
             AccountStateHandler addSumHandler, AccountStateHandler withdrawSumHandler,
             AccountStateHandler calculationHandler, AccountStateHandler closeAccountHandler,
