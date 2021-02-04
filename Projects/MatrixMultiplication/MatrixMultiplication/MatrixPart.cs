@@ -6,27 +6,33 @@ namespace MatrixMultiplication
 {
     class MatrixPart
     {
-        private int ARowNumber { get; }
-        private int BColumnNumber { get; }
+        private int StartRow { get; }
+        private int EndRow { get; }
         private MyMatrix A { get; }
         private MyMatrix B { get; }
         private MyMatrix C { get; set; }
 
 
-        public MatrixPart(int aRowNum, int bColNum, ref MyMatrix A, ref MyMatrix B, ref MyMatrix C)
+        public MatrixPart(int stRow, int endRow, in MyMatrix A, in MyMatrix B, ref MyMatrix C)
         {
             this.A = A;
             this.B = B;
             this.C = C;
-            ARowNumber = aRowNum;
-            BColumnNumber = bColNum;
+            StartRow = stRow;
+            EndRow = endRow;
         }
 
         public void CountPart()
         {
-            for (int i = 0; i < A.Columns; i++)
+            for (int i = StartRow; i < EndRow; i++)
             {
-                C.Matrix[ARowNumber,BColumnNumber] += A.Matrix[ARowNumber, i] * B.Matrix[i, BColumnNumber];
+                for (int j = 0; j < B.Rows; j++)
+                {
+                    for (int k = 0; k < B.Columns; k++)
+                    {
+                        C.Matrix[i, k] += A.Matrix[i, j] * B.Matrix[j, k];
+                    }
+                }
             }
         }
 
