@@ -12,7 +12,7 @@ namespace Racing_ParallelProgramming
         public Truck(double speed, double cargo)
         {
             trucksAmount++;
-            name = $"Truck{trucksAmount}";
+            Name = $"Truck{trucksAmount}";
             puncturePosibility = 0.05;
             this.speed = speed;
             cargoMass = cargo;

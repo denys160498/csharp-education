@@ -9,6 +9,6 @@ namespace Racing_ParallelProgramming
 
 
         void DisplayParameters();
-        void Move(double distance);
+        double Move(double distance);
     }
 }

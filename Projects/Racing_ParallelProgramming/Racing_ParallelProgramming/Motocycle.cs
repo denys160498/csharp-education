@@ -12,7 +12,7 @@ namespace Racing_ParallelProgramming
         public Motocycle(double speed, bool withSidecar)
         {
             motoAmount++;
-            name = $"Moto{motoAmount}";
+            Name = $"Moto{motoAmount}";
             puncturePosibility = 0.2;
             this.speed = speed;
             isWithSidecar = withSidecar;

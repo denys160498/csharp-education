@@ -12,7 +12,7 @@ namespace Racing_ParallelProgramming
         public Car(double speed, int passAm)
         {
             carsAmount++;
-            name = $"Car{carsAmount}";
+            Name = $"Car{carsAmount}";
             puncturePosibility = 0.1;
             this.speed = speed;
             passengersAmount = passAm;
