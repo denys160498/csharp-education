@@ -1,11 +1,14 @@
 Data structures and Algorithms:
-https://metanit.com/sharp/algoritm/
+++https://metanit.com/sharp/algoritm/
 
 Паттерны проектирования:
 https://metanit.com/sharp/patterns/
 
 MS SQL:
 https://www.tutorialspoint.com/ms_sql_server/index.htm
+
+Базы данных в С#:
+https://metanit.com/sharp/adonetcore/
 
 O/RMs:
 
@@ -15,4 +18,8 @@ ASP.NET MVC:
 https://metanit.com/sharp/mvc5/
 
 C#:
-https://metanit.com/sharp/tutorial/
+++https://metanit.com/sharp/tutorial/
+https://metanit.com/sharp/net/
+
+Entity framework:
+https://metanit.com/sharp/entityframeworkcore/

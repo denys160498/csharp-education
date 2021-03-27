@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FamilyImmitator", "FamilyImmitator\FamilyImmitator.csproj", "{33DAB30E-8B87-4817-B157-66F94CAD020C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FamilyLib", "Family\FamilyLib.csproj", "{B6F3D5E0-0575-4F6E-9724-94CE9ADDE1ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33DAB30E-8B87-4817-B157-66F94CAD020C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33DAB30E-8B87-4817-B157-66F94CAD020C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33DAB30E-8B87-4817-B157-66F94CAD020C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33DAB30E-8B87-4817-B157-66F94CAD020C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F3D5E0-0575-4F6E-9724-94CE9ADDE1ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F3D5E0-0575-4F6E-9724-94CE9ADDE1ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F3D5E0-0575-4F6E-9724-94CE9ADDE1ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F3D5E0-0575-4F6E-9724-94CE9ADDE1ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9776BFE7-2D5F-48A6-AC11-C1ECF0FA2D35}
+	EndGlobalSection
+EndGlobal
