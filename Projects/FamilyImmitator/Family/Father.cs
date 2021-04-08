@@ -8,7 +8,7 @@ namespace FamilyLib
     {
         private bool hasWork = true;
 
-        public Father(string name, short age) : base (name, age, "Father")
+        public Father(string name, short age, Family family) : base (name, age, "Father", family)
         {
         }
 

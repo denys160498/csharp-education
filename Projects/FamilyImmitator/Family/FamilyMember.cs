@@ -18,13 +18,16 @@ namespace FamilyLib
             get { return age; }
         }
 
+        protected Family family;
+
         public string Role { get; set; }
 
-        public FamilyMember(string name, short age, string role)
+        public FamilyMember(string name, short age, string role, Family family)
         {
             this.name = name;
             this.age = age;
             Role = role;
+            this.family = family;
         }
 
         public abstract void DoResponsibilities();
